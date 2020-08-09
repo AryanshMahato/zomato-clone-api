@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import queryString from "query-string";
 import mAxios from "../util/mAxios";
 import { ILocation } from "../types/Location";
+import internalServerError from "../errors/internalServerError";
 
 export default class Location {
   public static getAllLocation = async (req: Request, res: Response) => {
@@ -24,7 +25,8 @@ export default class Location {
         locations,
       });
     } catch (e) {
-      // TODO: Add internal server error
+      internalServerError(res);
+      console.log(e);
     }
   };
 }
