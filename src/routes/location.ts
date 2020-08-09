@@ -1,4 +1,4 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
 import Location from "../Controller/Location";
 import { check } from "express-validator";
 import validationError from "../errors/validationError";
@@ -14,8 +14,11 @@ locationRoutes.get(
 );
 
 // Gets all city details by id
-locationRoutes.get("/", (req: Request, res: Response) => {
-  console.log(req.body);
-});
+locationRoutes.get(
+  "/",
+  check("id", "Id is required Number").isNumeric(),
+  validationError,
+  Location.getLocation
+);
 
 export default locationRoutes;

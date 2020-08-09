@@ -29,4 +29,24 @@ export default class Location {
       console.log(e);
     }
   };
+
+  public static getLocation = async (req: Request, res: Response) => {
+    const { id } = req.body;
+    const searchString = queryString.stringify({ city_ids: id });
+
+    try {
+      const { data } = await mAxios.get(`cities?${searchString}`);
+
+      // Extracts required data
+      const location: ILocation = data.location_suggestions[0];
+
+      res.status(200).json({
+        message: "City Found!",
+        location,
+      });
+    } catch (e) {
+      internalServerError(res);
+      console.log(e);
+    }
+  };
 }

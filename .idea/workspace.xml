@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47ffe316-277c-463c-90c0-5650f92f41a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/types/Location.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/mAxios.ts" afterDir="false" />
+    <list default="true" id="47ffe316-277c-463c-90c0-5650f92f41a6" name="Default Changelist" comment="Get City Route Completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Location.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Location.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/location.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/location.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596952259497</updated>
       <workItem from="1596952260737" duration="821000" />
-      <workItem from="1596953099847" duration="3224000" />
+      <workItem from="1596953099847" duration="3632000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596953206593</created>
@@ -135,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596956241937</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="internalServerError Added">
+      <created>1596956372153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596956372153</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,17 +152,20 @@
     <MESSAGE value="Location naming changed" />
     <MESSAGE value="Basic Controller Structure created" />
     <MESSAGE value="Validation Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation Added" />
+    <MESSAGE value="Commit erroes fixed" />
+    <MESSAGE value="Commit errors fixed" />
+    <MESSAGE value="Get City Route Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get City Route Completed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596953369997">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="223" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596953369997" />
-    <state x="373" y="221" key="CommitChangelistDialog2" timestamp="1596955010764">
+    <state x="373" y="221" key="CommitChangelistDialog2" timestamp="1596956746248">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="373" y="221" key="CommitChangelistDialog2/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596955010764" />
+    <state x="373" y="221" key="CommitChangelistDialog2/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596956746248" />
     <state x="549" y="478" key="FileChooserDialogImpl" timestamp="1596953325375">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -231,10 +238,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="332" y="368" key="SettingsEditor/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596953252925" />
-    <state x="476" y="452" key="Vcs.Push.Dialog.v2" timestamp="1596955016385">
+    <state x="476" y="452" key="Vcs.Push.Dialog.v2" timestamp="1596956411721">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="476" y="452" key="Vcs.Push.Dialog.v2/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596955016385" />
+    <state x="476" y="452" key="Vcs.Push.Dialog.v2/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596956411721" />
     <state x="494" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1596952981740">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
