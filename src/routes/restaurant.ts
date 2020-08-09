@@ -5,8 +5,11 @@ import validationError from "../errors/validationError";
 
 const restaurantRoutes = Router();
 
+// Gets restaurant
+restaurantRoutes.post("/", Restaurant.getRestaurant);
+
 // Gets all restaurants
-restaurantRoutes.get(
+restaurantRoutes.post(
   "/all",
   check("locationId", "LocationId is required Number").isNumeric(),
   validationError,

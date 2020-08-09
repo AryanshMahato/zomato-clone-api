@@ -76,4 +76,31 @@ export default class Restaurant {
       internalServerError(res, e);
     }
   };
+
+  public static getRestaurant = async (req: Request, res: Response) => {
+    const { id } = req.body;
+    const searchString = queryString.stringify({ res_id: id });
+
+    try {
+      const { data } = await mAxios.get(`/restaurant?${searchString}`);
+
+      // Format Data the way needed in frontend
+      const restaurant = {
+        id: data.id,
+        name: data.name,
+        timings: data.timings,
+        phoneNumber: data.phoneNumber,
+        url: data.url,
+        location: data.location,
+        rating: data?.user_rating,
+      };
+
+      res.status(200).json({
+        message: "Categories",
+        restaurant,
+      });
+    } catch (e) {
+      internalServerError(res, e);
+    }
+  };
 }
