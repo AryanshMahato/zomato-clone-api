@@ -1,9 +1,30 @@
 import { Request, Response } from "express";
+import queryString from "query-string";
+import mAxios from "../util/mAxios";
+import { ILocation } from "../types/Location";
 
 export default class Location {
-  public static getAllLocation = (req: Request, res: Response) => {
-    res.json({
-      location: "Hello",
-    });
+  public static getAllLocation = async (req: Request, res: Response) => {
+    const { location } = req.body;
+    const searchString = queryString.stringify({ q: location });
+
+    try {
+      const { data } = await mAxios.get(`cities?${searchString}`);
+
+      // Extracts required data
+      const locations = data.location_suggestions.map(
+        (location: ILocation) => ({
+          id: location.id,
+          name: location.name,
+          country: location.country_name,
+        })
+      );
+      res.status(200).json({
+        message: "Some Suggestions",
+        locations,
+      });
+    } catch (e) {
+      // TODO: Add internal server error
+    }
   };
 }
