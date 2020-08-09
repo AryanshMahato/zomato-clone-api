@@ -45,4 +45,35 @@ export default class Restaurant {
       internalServerError(res, e);
     }
   };
+
+  public static getAllRestaurant = async (req: Request, res: Response) => {
+    const { locationId, cuisineId, categoryId } = req.body;
+    const searchString = queryString.stringify({
+      entity_id: locationId,
+      cuisines: cuisineId,
+      category: categoryId,
+    });
+
+    try {
+      const { data } = await mAxios.get(`/search?${searchString}`);
+
+      // Format Data the way needed in frontend
+      const restaurants = data.restaurants?.map(({ restaurant }: any) => ({
+        id: restaurant?.id,
+        name: restaurant?.name,
+        timings: restaurant?.timings,
+        rating: restaurant?.user_rating?.aggregate_rating,
+        phoneNumber: restaurant?.phone_numbers,
+        location: restaurant?.location?.locality,
+      }));
+
+      res.status(200).json({
+        message: "Categories",
+        restaurantFound: data.results_found,
+        restaurants,
+      });
+    } catch (e) {
+      internalServerError(res, e);
+    }
+  };
 }
