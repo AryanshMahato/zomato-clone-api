@@ -6,7 +6,7 @@ import validationError from "../errors/validationError";
 const locationRoutes = Router();
 
 // Gets all cities by name
-locationRoutes.get(
+locationRoutes.post(
   "/all",
   check("location", "Location is required String").isString(),
   validationError,
@@ -14,7 +14,7 @@ locationRoutes.get(
 );
 
 // Gets all city details by id
-locationRoutes.get(
+locationRoutes.post(
   "/",
   check("id", "Id is required Number").isNumeric(),
   validationError,
