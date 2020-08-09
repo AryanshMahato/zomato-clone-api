@@ -50,6 +50,7 @@ export default class Restaurant {
     const { locationId, cuisineId, categoryId } = req.body;
     const searchString = queryString.stringify({
       entity_id: locationId,
+      entity_type: "city",
       cuisines: cuisineId,
       category: categoryId,
     });
@@ -89,7 +90,7 @@ export default class Restaurant {
         id: data.id,
         name: data.name,
         timings: data.timings,
-        phoneNumber: data.phoneNumber,
+        phoneNumber: data.phone_numbers,
         url: data.url,
         location: data.location,
         rating: data?.user_rating,
