@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47ffe316-277c-463c-90c0-5650f92f41a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/cities.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cities.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/location.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -88,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596952259497</updated>
       <workItem from="1596952260737" duration="821000" />
-      <workItem from="1596953099847" duration="837000" />
+      <workItem from="1596953099847" duration="1094000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1596953206593</created>
@@ -97,25 +97,34 @@
       <option name="project" value="LOCAL" />
       <updated>1596953206593</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Basic routes created and switched to yarn from npm">
+      <created>1596954074748</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596954074748</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Basic routes created and switched to yarn from npm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic routes created and switched to yarn from npm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596953369997">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="223" y="378" key="#com.intellij.execution.impl.EditConfigurationsDialog/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596953369997" />
-    <state x="373" y="221" key="CommitChangelistDialog2" timestamp="1596953203291">
+    <state x="373" y="221" key="CommitChangelistDialog2" timestamp="1596954072302">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="373" y="221" key="CommitChangelistDialog2/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596953203291" />
+    <state x="373" y="221" key="CommitChangelistDialog2/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596954072302" />
     <state x="549" y="478" key="FileChooserDialogImpl" timestamp="1596953325375">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -188,6 +197,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="332" y="368" key="SettingsEditor/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596953252925" />
+    <state x="476" y="452" key="Vcs.Push.Dialog.v2" timestamp="1596954104044">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="476" y="452" key="Vcs.Push.Dialog.v2/2560.351.1536.864/0.0.2560.1440@0.0.2560.1440" timestamp="1596954104044" />
     <state x="494" y="330" width="672" height="678" key="search.everywhere.popup" timestamp="1596952981740">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

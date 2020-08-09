@@ -1,13 +1,13 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import cityRoutes from "./routes/cities";
+import locationRoutes from "./routes/location";
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use("/city", cityRoutes);
+app.use("/location", locationRoutes);
 
 export default app;
